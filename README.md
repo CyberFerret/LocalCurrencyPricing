@@ -11,7 +11,7 @@ I strongly recommend that you [sign up](https://ipdata.co) for an IPData.co API 
 
 ## How does it work?
 
-I wrote a whole [blog post](https://devan.blaze.com.au/) on getting this to work, which explains most of the code.  Feel free to check out the post.
+I wrote a whole [blog post](http://devan.blaze.com.au/blog/2018/8/1/building-a-pricing-screen-which-reflects-local-currency) on getting this to work, which explains most of the code.  Feel free to check out the post.
 
 
 
