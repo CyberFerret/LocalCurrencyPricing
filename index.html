@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Demonstration of dynamic currency display</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/heroic-features.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Widgets Inc.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Jumbotron Header -->
+      <header class="jumbotron my-4">
+        <h1 class="display-3">Hello there!</h1>
+        <p class="lead">The pricing shown below should correspond to your location (or default to the US) like the pricing page on our <a href="https://www.hrpartner.io" target="_blank">HR Partner</a> site.</p>
+        <a href="https://www.hrpartner.io/pricing.html" class="btn btn-primary btn-lg">See it in action!</a>
+      </header>
+
+      <div class="row text-center">
+        <div class="col-lg-12 m-2">
+          <p>Show me pricing in: </p>
+          <div class="btn-group mb-3" role="group" aria-label="Select Currency">
+            <button type="button" class="btn btn-secondary" onclick="displayPrice('USD');">USD</button>
+            <button type="button" class="btn btn-secondary" onclick="displayPrice('GBP');">GBP</button>
+            <button type="button" class="btn btn-secondary" onclick="displayPrice('EUR');">EUR</button>
+            <button type="button" class="btn btn-secondary" onclick="displayPrice('AUD');">AUD</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page Features -->
+      <div class="row text-center">
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="text-primary">FREE</h2>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title pricing USD_pricing">USD $0</h4>
+              <h4 class="card-title pricing GBP_pricing collapse">GBP &pound;0</h4>
+              <h4 class="card-title pricing EUR_pricing collapse">EUR &euro;0</h4>
+              <h4 class="card-title pricing AUD_pricing collapse">AUD $0</h4>
+              <p class="card-text text-info">Our free plan will suit the Scrooge McDuck's among you.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="text-primary">Basic</h2>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title pricing USD_pricing">USD $10</h4>
+              <h4 class="card-title pricing GBP_pricing collapse">GBP &pound;8</h4>
+              <h4 class="card-title pricing EUR_pricing collapse">EUR &euro;9</h4>
+              <h4 class="card-title pricing AUD_pricing collapse">AUD $14</h4>
+              <p class="card-text text-info">This basic plan should get you kick started.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="text-primary">Medium</h2>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title pricing USD_pricing">USD $50</h4>
+              <h4 class="card-title pricing GBP_pricing collapse">GBP &pound;38</h4>
+              <h4 class="card-title pricing EUR_pricing collapse">EUR &euro;42</h4>
+              <h4 class="card-title pricing AUD_pricing collapse">AUD $67</h4>
+              <p class="card-text text-info">For businesses that really need all the bells and whistles.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="text-primary">Enterprise</h2>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title pricing USD_pricing">USD $200</h4>
+              <h4 class="card-title pricing GBP_pricing collapse">GBP &pound;152</h4>
+              <h4 class="card-title pricing EUR_pricing collapse">EUR &euro;171</h4>
+              <h4 class="card-title pricing AUD_pricing collapse">AUD $270</h4>
+              <p class="card-text text-info">If you have more money than Elon Musk, then this is the plan for you.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Widgets Inc. 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $.get("https://api.ipdata.co?api-key=e1173cbb1676c06b2136abfc7ca95e0c10b8ee98623bfbb0c47b0aaa", function (response) {
+          var detectedCurrency = response.currency.code;
+          displayPrice(detectedCurrency)
+        }, "jsonp");
+      });
+
+      displayPrice = function(currency) {
+        // First, lets hide all the current pricing
+        $(".pricing").hide();
+        // Is the currency within the valid range of currencies that we wish to show?
+        if (currency !== null || (["USD", "AUD", "GBP", "EUR"].indexOf(currency) > -1)) {
+          // If yes, then show the currency
+          $("." + currency + "_pricing").show();
+        } else {
+          // If no, then just show USD pricing
+          $(".USD_pricing").show();
+        }
+      }
+    
+    </script>
+
+  </body>
+
+</html>
